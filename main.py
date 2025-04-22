@@ -1,3 +1,8 @@
+# This script demonstrates a basic Retrieval Question Answering (RQA) system using Langchain and Hugging Face Transformers.
+# It loads a small knowledge base from a text file, creates embeddings for the text chunks,
+# builds a FAISS vector store for efficient retrieval, and then uses a text-to-text generation model
+# (Flan-T5) to answer questions based on the retrieved information.
+
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings  # For creating embeddings using Hugging Face models
 from langchain_community.vectorstores import FAISS  # For creating and using a FAISS vector store
 from langchain_huggingface.llms import HuggingFacePipeline  # For integrating Hugging Face models as Language Model (LLM)
